@@ -25,7 +25,7 @@ provider "aws" {
 
 locals {
   # Use existing (via data source) or create new zone (will fail validation, if zone is not reachable)
-  use_existing_route53_zone = true
+  use_existing_route53_zone = false
 
   domain = "terraform-aws-modules.modules.tf"
 
